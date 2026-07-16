@@ -5,7 +5,7 @@ gimnasio. Crea rutinas desde un video de YouTube, una foto de tu plan, texto o
 pidiéndoselo a la IA. 1324 ejercicios con demostración en video, todo guardado
 localmente en tu teléfono.
 
-- **Descargar APK:** https://github.com/cacorreap/personal-projects-public-apk/releases/download/gymjournal-v1.1.1/gymjournal.apk
+- **Descargar APK:** https://github.com/cacorreap/personal-projects-public-apk/releases/download/gymjournal-v1.2.0/gymjournal.apk
 - **Landing:** https://cacorreap.github.io/gymjournal-public/
 
 ## Privacidad
