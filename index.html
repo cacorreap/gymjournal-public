@@ -111,15 +111,17 @@
     </p>
 
     <div class="cta">
-      <a class="btn" href="https://github.com/cacorreap/gymjournal-public/releases/latest/download/gymjournal.apk">
+      <a class="btn" href="https://github.com/cacorreap/personal-projects-public-apk/releases/download/gymjournal-v1.1.0/gymjournal.apk">
         ⬇️ Descargar APK
       </a>
-      <div class="meta">v<span id="ver">1.0.0</span> · <span id="size">~70 MB</span> · Android 7+</div>
+      <div class="meta">v<span id="ver">1.1.0</span> · <span id="size">72 MB</span> · Android 7+</div>
     </div>
 
     <div class="features">
       <div class="feature"><div class="fi">🤖</div><h3>Rutinas con IA</h3><p>Describe tu objetivo y la IA arma la rutina completa con series y reps.</p></div>
       <div class="feature"><div class="fi">🎬</div><h3>1324 ejercicios</h3><p>Cada ejercicio con video en bucle e instrucciones paso a paso en español.</p></div>
+      <div class="feature"><div class="fi">⏱️</div><h3>Circuito con voz</h3><p>Modo por tiempo que te habla en cada ejercicio y suena en la cuenta atrás.</p></div>
+      <div class="feature"><div class="fi">🗓️</div><h3>Calendario y plan</h3><p>Programa tus entrenos, gana una medalla cada día que cumples y crea tu semana con IA.</p></div>
       <div class="feature"><div class="fi">🏋️</div><h3>Modo entreno</h3><p>Registra series, peso y reps con cronómetro de descanso mientras entrenas.</p></div>
       <div class="feature"><div class="fi">🔒</div><h3>Todo tuyo</h3><p>Tus rutinas y progreso se guardan solo en tu teléfono. Sin cuentas.</p></div>
     </div>
@@ -131,6 +133,7 @@
         <span class="chip">📷 <b>Una foto</b></span>
         <span class="chip">✍️ <b>Texto</b></span>
         <span class="chip">🤖 <b>La IA</b></span>
+        <span class="chip">🏷️ <b>Categoría</b></span>
         <span class="chip">➕ <b>Manual</b></span>
       </div>
     </div>
@@ -152,12 +155,12 @@
   </div>
 
   <script>
-    // Rellena versión/tamaño desde el último release si está disponible.
-    fetch("https://api.github.com/repos/cacorreap/gymjournal-public/releases/latest")
+    // Rellena versión/tamaño desde el release publicado (en el hub de apps).
+    fetch("https://api.github.com/repos/cacorreap/personal-projects-public-apk/releases/tags/gymjournal-v1.1.0")
       .then((r) => r.ok ? r.json() : null)
       .then((d) => {
         if (!d) return;
-        if (d.tag_name) document.getElementById("ver").textContent = d.tag_name.replace(/^v/, "");
+        if (d.tag_name) document.getElementById("ver").textContent = d.tag_name.replace(/^gymjournal-v/, "");
         const apk = (d.assets || []).find((a) => a.name.endsWith(".apk"));
         if (apk) document.getElementById("size").textContent = (apk.size / 1048576).toFixed(0) + " MB";
       })
