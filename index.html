@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descargar GymJournal — Rutinas de gym con IA</title>
+  <meta name="description" content="GymJournal: crea rutinas de entrenamiento desde un video de YouTube, una foto, texto o con IA. 1324 ejercicios con video demostrativo. Todo local. APK para Android." />
+
+  <meta property="og:title" content="GymJournal — Tu diario de entrenamiento con IA" />
+  <meta property="og:description" content="Crea rutinas desde YouTube, una foto, texto o con IA. 1324 ejercicios con demostración en video. Descarga el APK para Android." />
+  <meta property="og:image" content="assets/icon.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/icon.png" />
+  <style>
+    :root {
+      --bg: #0E0F16;
+      --card: #181A24;
+      --card-alt: #22242F;
+      --primary: #6A5BFF;
+      --primary-2: #8281FF;
+      --lime: #C6F135;
+      --lime-2: #D6FF57;
+      --text: #F2F3F8;
+      --text-secondary: #A0A5B4;
+      --muted: #686D7C;
+      --border: #282B38;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(1100px 560px at 50% -8%, #23244A 0%, var(--bg) 58%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 640px; margin: 0 auto; padding: 56px 24px 80px; }
+    header { text-align: center; }
+    .icon {
+      width: 116px; height: 116px; border-radius: 27px;
+      box-shadow: 0 16px 44px rgba(91,91,245,.4);
+      border: 1px solid var(--border);
+    }
+    .logo { font-size: 40px; font-weight: 900; letter-spacing: -1px; margin-top: 22px; }
+    .logo .accent { color: var(--lime); }
+    .tag { color: var(--text-secondary); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; }
+
+    .badge {
+      display: inline-block; margin: 28px 0 0; padding: 6px 14px; border-radius: 999px;
+      background: rgba(198,241,53,.1); border: 1px solid rgba(198,241,53,.35);
+      color: var(--lime); font-size: 12px; font-weight: 700; letter-spacing: 1.5px;
+    }
+    .hero-title { font-size: 25px; font-weight: 900; margin: 16px 0 8px; text-align: center; }
+    .lead { color: var(--text-secondary); font-size: 15px; text-align: center; margin: 0 auto 8px; max-width: 460px; }
+
+    .cta { margin: 30px 0 12px; text-align: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+      background: linear-gradient(135deg, var(--lime-2), var(--lime)); color: #14161F; text-decoration: none;
+      font-size: 18px; font-weight: 800; letter-spacing: .3px;
+      padding: 16px 34px; border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(198,241,53,.28);
+      transition: transform .08s ease, filter .2s ease;
+    }
+    .btn:hover { filter: brightness(1.05); }
+    .btn:active { transform: scale(.98); }
+    .meta { color: var(--muted); font-size: 13px; margin-top: 12px; text-align: center; }
+
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 44px; }
+    @media (max-width: 520px) { .features { grid-template-columns: 1fr; } }
+    .feature {
+      background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 20px;
+    }
+    .feature .fi { font-size: 26px; }
+    .feature h3 { font-size: 16px; margin: 10px 0 4px; }
+    .feature p { color: var(--text-secondary); font-size: 14px; margin: 0; }
+
+    .sources { margin-top: 40px; }
+    .sources h2 { font-size: 20px; text-align: center; margin-bottom: 18px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .chip {
+      background: var(--card-alt); color: var(--text-secondary); border: 1px solid var(--border);
+      padding: 9px 15px; border-radius: 999px; font-size: 14px; font-weight: 700;
+    }
+    .chip b { color: var(--text); }
+
+    .how { margin-top: 44px; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px 24px; }
+    .how h2 { font-size: 17px; margin: 0 0 12px; }
+    .how ol { margin: 0; padding-left: 20px; color: var(--text-secondary); font-size: 14px; }
+    .how li { margin-bottom: 6px; }
+
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 48px; line-height: 1.8; }
+    footer a { color: var(--primary-2); }
+    .privacy { color: var(--text-secondary); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="icon" src="assets/icon.png" alt="GymJournal" />
+      <div class="logo">Gym<span class="accent">Journal</span></div>
+      <div class="tag">Tu diario de entrenamiento</div>
+      <span class="badge">ANDROID · GRATIS · 100% LOCAL</span>
+    </header>
+
+    <h1 class="hero-title">Crea rutinas de gym en segundos</h1>
+    <p class="lead">
+      Genera rutinas desde un video de YouTube, una foto de tu plan, texto o pidiéndoselo a la IA.
+      Cada ejercicio se enlaza con su demostración en video.
+    </p>
+
+    <div class="cta">
+      <a class="btn" href="https://github.com/cacorreap/gymjournal-public/releases/latest/download/gymjournal.apk">
+        ⬇️ Descargar APK
+      </a>
+      <div class="meta">v<span id="ver">1.0.0</span> · <span id="size">~70 MB</span> · Android 7+</div>
+    </div>
+
+    <div class="features">
+      <div class="feature"><div class="fi">🤖</div><h3>Rutinas con IA</h3><p>Describe tu objetivo y la IA arma la rutina completa con series y reps.</p></div>
+      <div class="feature"><div class="fi">🎬</div><h3>1324 ejercicios</h3><p>Cada ejercicio con video en bucle e instrucciones paso a paso en español.</p></div>
+      <div class="feature"><div class="fi">🏋️</div><h3>Modo entreno</h3><p>Registra series, peso y reps con cronómetro de descanso mientras entrenas.</p></div>
+      <div class="feature"><div class="fi">🔒</div><h3>Todo tuyo</h3><p>Tus rutinas y progreso se guardan solo en tu teléfono. Sin cuentas.</p></div>
+    </div>
+
+    <div class="sources">
+      <h2>Crea tu rutina desde…</h2>
+      <div class="chips">
+        <span class="chip">📺 <b>YouTube</b></span>
+        <span class="chip">📷 <b>Una foto</b></span>
+        <span class="chip">✍️ <b>Texto</b></span>
+        <span class="chip">🤖 <b>La IA</b></span>
+        <span class="chip">➕ <b>Manual</b></span>
+      </div>
+    </div>
+
+    <div class="how">
+      <h2>¿Cómo instalo el APK?</h2>
+      <ol>
+        <li>Descarga el archivo <code>.apk</code> en tu teléfono Android.</li>
+        <li>Ábrelo desde <b>Archivos</b> o <b>Descargas</b>.</li>
+        <li>Permite <b>“Instalar apps de fuentes desconocidas”</b> cuando te lo pida.</li>
+        <li>Toca <b>Instalar</b>. ¡Listo para entrenar! 💪</li>
+      </ol>
+    </div>
+
+    <footer>
+      <div class="privacy">La IA es opcional (usa tu propia clave de OpenAI). Sin ella, funciona en modo demo con el catálogo local.</div>
+      <div style="margin-top:10px">Hecho por César Correa · Ejercicios de <a href="https://github.com/hasaneyldrm/exercises-dataset">exercises-dataset</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Rellena versión/tamaño desde el último release si está disponible.
+    fetch("https://api.github.com/repos/cacorreap/gymjournal-public/releases/latest")
+      .then((r) => r.ok ? r.json() : null)
+      .then((d) => {
+        if (!d) return;
+        if (d.tag_name) document.getElementById("ver").textContent = d.tag_name.replace(/^v/, "");
+        const apk = (d.assets || []).find((a) => a.name.endsWith(".apk"));
+        if (apk) document.getElementById("size").textContent = (apk.size / 1048576).toFixed(0) + " MB";
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
