@@ -1,11 +1,11 @@
-# GymJournal — descargas
+# RutinaSnap — descargas
 
-Página pública y APK de **GymJournal**, una app para crear y seguir rutinas de
-gimnasio. Crea rutinas desde un video de YouTube, una foto de tu plan, texto o
-pidiéndoselo a la IA. 1324 ejercicios con demostración en video, todo guardado
-localmente en tu teléfono.
+Página pública y APK de **RutinaSnap** (antes GymJournal), una app para crear y
+seguir rutinas de gimnasio. Convierte un Reel, TikTok, video de YouTube, una foto
+de tu plan o un texto en una rutina que sigues y registras, con IA. 1324 ejercicios
+con demostración en video, todo guardado localmente en tu teléfono.
 
-- **Descargar APK:** https://github.com/cacorreap/personal-projects-public-apk/releases/download/gymjournal-v1.6.0/gymjournal.apk
+- **Descargar APK:** https://github.com/cacorreap/personal-projects-public-apk/releases/download/gymjournal-v1.11.0/gymjournal.apk
 - **Landing:** https://cacorreap.github.io/gymjournal-public/
 
 ## Privacidad
