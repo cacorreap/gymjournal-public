@@ -5,7 +5,7 @@ seguir rutinas de gimnasio. Convierte un Reel, TikTok, video de YouTube, una fot
 de tu plan o un texto en una rutina que sigues y registras, con IA. 1324 ejercicios
 con demostración en video, todo guardado localmente en tu teléfono.
 
-- **Descargar APK:** https://github.com/cacorreap/personal-projects-public-apk/releases/download/gymjournal-v1.12.1/gymjournal.apk
+- **Descargar APK:** https://github.com/cacorreap/personal-projects-public-apk/releases/download/gymjournal-v1.13.0/gymjournal.apk
 - **Landing:** https://cacorreap.github.io/gymjournal-public/
 
 ## Privacidad
